@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/particule.dir/Particule.cxx.o"
-  "CMakeFiles/particule.dir/Particule.cxx.o.d"
+  "CMakeFiles/particule.dir/particule.cxx.o"
+  "CMakeFiles/particule.dir/particule.cxx.o.d"
   "libparticule.a"
   "libparticule.pdb"
 )

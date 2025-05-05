@@ -1,4 +1,4 @@
-#include "Particule.h"
+#include "particule.h"
 #include <iostream>
 #include <iomanip>  // Pour un affichage formaté
 
