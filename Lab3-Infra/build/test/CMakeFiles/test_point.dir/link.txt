@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall CMakeFiles/test_point.dir/test_point.cxx.o -o test_point  ../src/libparticule.a 

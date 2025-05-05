@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall CMakeFiles/collection_particule.dir/collection_particule.cxx.o -o collection_particule  ../src/libparticule.a 
