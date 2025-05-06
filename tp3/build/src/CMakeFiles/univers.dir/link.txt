@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunivers.a CMakeFiles/univers.dir/univers.cxx.o CMakeFiles/univers.dir/particule.cxx.o CMakeFiles/univers.dir/vecteur.cxx.o
+/usr/bin/ranlib libunivers.a
