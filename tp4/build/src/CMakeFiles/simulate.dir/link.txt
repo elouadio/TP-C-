@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimulate.a CMakeFiles/simulate.dir/univers.cxx.o CMakeFiles/simulate.dir/particule.cxx.o CMakeFiles/simulate.dir/vecteur.cxx.o CMakeFiles/simulate.dir/simulate.cxx.o
+/usr/bin/ranlib libsimulate.a

@@ -1,1 +1,1 @@
-/opt/gcc-fsf-gnat/bin/c++ -Wall -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_avancer_univer.dir/test_avancer_univer.cxx.o -o test_avancer_univer  ../src/libunivers.a ../src/libsimulate.a
+/usr/bin/c++ -Wall CMakeFiles/test_avancer_univer.dir/test_avancer_univer.cxx.o -o test_avancer_univer  ../src/libunivers.a ../src/libsimulate.a 
