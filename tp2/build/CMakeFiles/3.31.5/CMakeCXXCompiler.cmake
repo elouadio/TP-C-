@@ -90,7 +90,7 @@ set(CMAKE_CXX_OSX_DEPLOYMENT_TARGET_FLAG "-mmacosx-version-min=")
 
 set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/gcc-fsf-gnat/include/c++/11.3.0;/opt/gcc-fsf-gnat/include/c++/11.3.0/aarch64-apple-darwin22.5.0;/opt/gcc-fsf-gnat/include/c++/11.3.0/backward;/opt/gcc-fsf-gnat/lib/gcc/aarch64-apple-darwin22.5.0/11.3.0/include;/opt/gcc-fsf-gnat/lib/gcc/aarch64-apple-darwin22.5.0/11.3.0/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;emutls_w;gcc;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/opt/gcc-fsf-gnat/lib/gcc/aarch64-apple-darwin22.5.0/11.3.0;/opt/gcc-fsf-gnat/lib;/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/opt/gcc-fsf-gnat/lib/gcc/aarch64-apple-darwin22.5.0/11.3.0;/opt/gcc-fsf-gnat/lib;/Users/elouadifiothmane/tp_cplus/TP-C-/tp2")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 

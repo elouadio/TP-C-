@@ -1,24 +1,35 @@
 #include "univers.h"
 #include <iostream>
+#include <cassert>
+#include <cmath>    
 
 int main() {
-    // Création d’un univers 3D avec :
-    // - Longueurs caractéristiques : 1.0 x 1.0 x 1.0
-    // - Rayon de coupure : 0.5
-    // - Constantes physiques : epsilon = 1.0, sigma = 1.0
-    Univers u(3, {1.0, 1.0, 1.0}, 0.5, 1.0, 1.0);
+    std::vector<double> longueurs = {10.0, 10.0, 10.0};
+    Univers univers(3, longueurs, 2.0, 1.0, 1.0);
 
-    // Initialisation d’un cube 2x2x2 (8 particules)
-    u.initialiserCube(3);
+    // 🔹 Initialiser le cube de particules
+    univers.initialiserCube(10);
 
-    std::cout << "\n=== État initial de l'univers ===\n";
-    u.afficher();
+    //  Test 1 : Vérification du nombre de particules
+    size_t expected_particles = 10 * 10 * 10;
+    assert(univers.getParticules().size() == expected_particles);
+    std::cout << "Test 1 réussi : Nombre de particules correctement initialisé." << std::endl;
 
-    // Simulation avec dt = 0.01, tmax = 0.1
-    u.avancer(0.01, 0.1);
+    // Test 2 : Vérification du maillage
+    const auto& grille = univers.getGrille();
+    size_t ncd_x = std::ceil(longueurs[0] / 2.0);
+    size_t ncd_y = std::ceil(longueurs[1] / 2.0);
+    size_t ncd_z = std::ceil(longueurs[2] / 2.0);
 
-    std::cout << "\n=== État final de l'univers ===\n";
-    u.afficher();
+    assert(grille.size() == ncd_x);
+    assert(grille[0].size() == ncd_y);
+    assert(grille[0][0].size() == ncd_z);
+    std::cout << "Test 2 réussi : Grille correctement dimensionnée." << std::endl;
+
+    // 🔹 Afficher le contenu de la grille
+    univers.afficher();
+
+    std::cout << "\n Tous les tests sont passés avec succès." << std::endl;
 
     return 0;
 }

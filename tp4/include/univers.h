@@ -2,38 +2,46 @@
 #define UNIVERS_H
 
 #include <vector>
+#include "vecteur.h"
 #include "particule.h"
 
+struct Cellule {
+    std::vector<Particule*> particules;
+};
+
 class Univers {
-private:
-    int dimension;                      // 1, 2 ou 3
-    std::vector<double> longueurs;     // Longueurs caractéristiques (Lx, Ly, Lz)
-    double rcut;                        // Rayon de coupure
-    double epsilon;                    // Profondeur du potentiel de Lennard-Jones
-    double sigma;                      // Distance caractéristique
-
-    std::vector<Particule> particules; // Particules dans l'univers
-
 public:
-    // Constructeur
     Univers(int dim, const std::vector<double>& Ld, double r_cut, double eps, double sig);
 
-    // Initialisation régulière des particules
     void initialiserCube(int n);
+    void initialiserMaillage();
+    void afficher() const;
 
-    // Simulation
-    void avancer(double dt, double Tmax);
+    // 🔹 Nouvelle méthode pour mettre à jour le maillage
+    void mettreAJourMaillage();
 
-    // Accès
+    // Accesseurs
+    const std::vector<Particule>& getParticules() const;
     std::vector<Particule>& getParticules();
     int getDimension() const;
     double getRcut() const;
     const std::vector<double>& getLongueurs() const;
     double getEpsilon() const;
     double getSigma() const;
+    const std::vector<std::vector<std::vector<Cellule>>>& getGrille() const;
 
-    // Affichage
-    void afficher() const;
+    int getNcdX() const;
+    int getNcdY() const;
+    int getNcdZ() const;
+    double getLongueur(int index) const;
+
+private:
+    int dimension;
+    std::vector<double> longueurs;
+    double rcut, epsilon, sigma;
+    std::vector<Particule> particules;
+    std::vector<std::vector<std::vector<Cellule>>> grille;
+    int ncd_x, ncd_y, ncd_z;
 };
 
-#endif
+#endif // UNIVERS_H

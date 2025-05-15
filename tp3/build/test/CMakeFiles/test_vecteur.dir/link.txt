@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wall CMakeFiles/test_vecteur.dir/test_vecteur.cxx.o -o test_vecteur  ../src/libvecteur.a 
+/opt/gcc-fsf-gnat/bin/c++ -Wall -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_vecteur.dir/test_vecteur.cxx.o -o test_vecteur  ../src/libvecteur.a

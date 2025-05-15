@@ -1,5 +1,5 @@
 test/CMakeFiles/test_point.dir/test_point.cxx.o: \
- /Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/test/test_point.cxx \
+ /Users/elouadifiothmane/tp_cplus/TP-C-/tp2/test/test_point.cxx \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/iostream \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/aarch64-apple-darwin22.5.0/bits/c++config.h \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/aarch64-apple-darwin22.5.0/bits/os_defines.h \
@@ -200,7 +200,7 @@ test/CMakeFiles/test_point.dir/test_point.cxx.o: \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/bits/ostream.tcc \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/istream \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/bits/istream.tcc \
- /Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/include/Particule.h \
+ /Users/elouadifiothmane/tp_cplus/TP-C-/tp2/include/Particule.h \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/array \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/utility \
  /opt/gcc-fsf-gnat/include/c++/11.3.0/bits/stl_relops.h

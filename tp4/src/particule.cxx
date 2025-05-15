@@ -27,7 +27,9 @@ Vecteur Particule::getForce() const { return force; }
 void Particule::setPosition(const Vecteur& pos) { position = pos; }
 void Particule::setVitesse(const Vecteur& vit) { vitesse = vit; }
 void Particule::setForce(const Vecteur& frc) { force = frc; }
-
+void Particule::setId(int newId) {
+    id = newId;
+}
 // Affichage
 void Particule::print_particule() const {
     cout << fixed << setprecision(3)

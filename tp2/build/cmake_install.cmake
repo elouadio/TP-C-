@@ -1,4 +1,4 @@
-# Install script for directory: /Users/elouadifiothmane/tp/TP-C-/Lab3-Infra
+# Install script for directory: /Users/elouadifiothmane/tp_cplus/TP-C-/tp2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,18 +39,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/build/src/cmake_install.cmake")
+  include("/Users/elouadifiothmane/tp_cplus/TP-C-/tp2/build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/build/test/cmake_install.cmake")
+  include("/Users/elouadifiothmane/tp_cplus/TP-C-/tp2/build/test/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/build/install_local_manifest.txt"
+  file(WRITE "/Users/elouadifiothmane/tp_cplus/TP-C-/tp2/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -66,6 +66,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/elouadifiothmane/tp_cplus/TP-C-/tp2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

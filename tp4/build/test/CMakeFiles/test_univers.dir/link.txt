@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wall CMakeFiles/test_univers.dir/test_univers.cxx.o -o test_univers  ../src/libunivers.a ../src/libsimulate.a 
+/opt/gcc-fsf-gnat/bin/c++ -Wall -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_univers.dir/test_univers.cxx.o -o test_univers  ../src/libunivers.a ../src/libsimulate.a

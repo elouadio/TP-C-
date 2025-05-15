@@ -4,7 +4,7 @@
 # compile CXX with /opt/gcc-fsf-gnat/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/elouadifiothmane/tp/TP-C-/Lab3-Infra/include
+CXX_INCLUDES = -I/Users/elouadifiothmane/tp_cplus/TP-C-/tp2/include
 
 CXX_FLAGSarm64 = -Wall -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 

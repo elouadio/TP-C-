@@ -34,6 +34,7 @@ public:
     void setPosition(const Vecteur& pos);
     void setVitesse(const Vecteur& vit);
     void setForce(const Vecteur& frc);
+    void setId(int newId);
 
     void print_particule() const;
 };
