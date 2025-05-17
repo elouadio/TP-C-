@@ -3,32 +3,34 @@
 
 #include "univers.h"
 #include "vecteur.h"
-#include "particule.h"
 #include <vector>
 
 /**
- * Calcul de la force de Lennard-Jones
- * @param p1 : Particule 1
- * @param p2 : Particule 2
- * @param epsilon : Propriété du potentiel de Lennard-Jones
- * @param sigma : Propriété du potentiel de Lennard-Jones
- * @return La force de Lennard-Jones appliquée
+ * @brief Calcule la force de Lennard-Jones entre deux particules
+ * 
+ * @param p1 Particule 1
+ * @param p2 Particule 2
+ * @param epsilon Paramètre epsilon de Lennard-Jones
+ * @param sigma Paramètre sigma de Lennard-Jones
+ * @return Vecteur représentant la force appliquée sur p1 par p2
  */
 Vecteur compute_LJ_force(const Particule& p1, const Particule& p2, double epsilon, double sigma);
 
 /**
- * Calcul des forces dans l'Univers
- * @param univers : L'univers contenant les particules et le maillage
+ * @brief Calcule les forces pour toutes les particules dans l'univers
+ * 
+ * @param univers L'univers contenant les particules et le maillage
  * @return Un vecteur contenant les forces appliquées sur chaque particule
  */
 std::vector<Vecteur> compute_forces(const Univers& univers);
 
 /**
- * Simulation du déplacement des particules dans l'univers
- * en utilisant l'algorithme de Störmer-Verlet.
- * @param univers : L'univers à simuler
- * @param tmax : Temps maximal de la simulation
+ * @brief Exécute la simulation en utilisant l'algorithme de Störmer-Verlet
+ * 
+ * @param univers L'univers contenant les particules
+ * @param tmax Le temps maximum de simulation
+ * @param dt Le pas de temps de la simulation
  */
-void simulate(Univers& univers, double tmax);
+void simulate(Univers& univers, double tmax, double dt);
 
 #endif // SIMULATE_H

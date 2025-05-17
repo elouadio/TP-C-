@@ -11,5 +11,6 @@
 /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/test_simulate.dir
 /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/test_graphique.dir
 /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/test_visu.dir
+/Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/test_simul.dir
 /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/edit_cache.dir
 /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build/test/CMakeFiles/rebuild_cache.dir

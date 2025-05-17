@@ -81,8 +81,9 @@ int main() {
 
     // === Simulation de test ===
     double tmax = 0;
+    double dt = 0.01;
 
-    simulate(univers, tmax);
+    simulate(univers, tmax,dt);
 
     cout << "\n=== Simulation terminée. ===" << endl;
 

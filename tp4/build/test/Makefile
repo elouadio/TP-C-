@@ -186,6 +186,20 @@ test_visu/fast:
 	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_visu.dir/build.make test/CMakeFiles/test_visu.dir/build
 .PHONY : test_visu/fast
 
+# Convenience name for target.
+test/CMakeFiles/test_simul.dir/rule:
+	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_simul.dir/rule
+.PHONY : test/CMakeFiles/test_simul.dir/rule
+
+# Convenience name for target.
+test_simul: test/CMakeFiles/test_simul.dir/rule
+.PHONY : test_simul
+
+# fast build rule for target.
+test_simul/fast:
+	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simul.dir/build.make test/CMakeFiles/test_simul.dir/build
+.PHONY : test_simul/fast
+
 test_graphique.o: test_graphique.cxx.o
 .PHONY : test_graphique.o
 
@@ -258,6 +272,30 @@ test_simuate.cxx.s:
 	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simulate.dir/build.make test/CMakeFiles/test_simulate.dir/test_simuate.cxx.s
 .PHONY : test_simuate.cxx.s
 
+test_simul.o: test_simul.cxx.o
+.PHONY : test_simul.o
+
+# target to build an object file
+test_simul.cxx.o:
+	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simul.dir/build.make test/CMakeFiles/test_simul.dir/test_simul.cxx.o
+.PHONY : test_simul.cxx.o
+
+test_simul.i: test_simul.cxx.i
+.PHONY : test_simul.i
+
+# target to preprocess a source file
+test_simul.cxx.i:
+	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simul.dir/build.make test/CMakeFiles/test_simul.dir/test_simul.cxx.i
+.PHONY : test_simul.cxx.i
+
+test_simul.s: test_simul.cxx.s
+.PHONY : test_simul.s
+
+# target to generate assembly for a file
+test_simul.cxx.s:
+	cd /Users/elouadifiothmane/tp_cplus/TP-C-/tp4/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simul.dir/build.make test/CMakeFiles/test_simul.dir/test_simul.cxx.s
+.PHONY : test_simul.cxx.s
+
 test_univers.o: test_univers.cxx.o
 .PHONY : test_univers.o
 
@@ -316,6 +354,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_graphique"
 	@echo "... test_interraction"
+	@echo "... test_simul"
 	@echo "... test_simulate"
 	@echo "... test_univers"
 	@echo "... test_visu"
@@ -328,6 +367,9 @@ help:
 	@echo "... test_simuate.o"
 	@echo "... test_simuate.i"
 	@echo "... test_simuate.s"
+	@echo "... test_simul.o"
+	@echo "... test_simul.i"
+	@echo "... test_simul.s"
 	@echo "... test_univers.o"
 	@echo "... test_univers.i"
 	@echo "... test_univers.s"

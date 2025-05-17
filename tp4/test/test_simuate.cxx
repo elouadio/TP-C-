@@ -26,7 +26,8 @@ int main() {
     // 🔹 Simulation pendant 1 seconde
     cout << "\n=== Début de la simulation ===" << endl;
     double tmax = 1.0;  // 1 seconde de simulation
-    simulate(univers, tmax);
+    double dt = 0.001;
+    simulate(univers, tmax,dt);
 
     // 🔹 Afficher l'état final
     cout << "\n=== État final des particules ===" << endl;

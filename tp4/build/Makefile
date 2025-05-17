@@ -233,6 +233,19 @@ test_visu/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_visu.dir/build.make test/CMakeFiles/test_visu.dir/build
 .PHONY : test_visu/fast
 
+#=============================================================================
+# Target rules for targets named test_simul
+
+# Build rule for target.
+test_simul: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_simul
+.PHONY : test_simul
+
+# fast build rule for target.
+test_simul/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_simul.dir/build.make test/CMakeFiles/test_simul.dir/build
+.PHONY : test_simul/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -245,6 +258,7 @@ help:
 	@echo "... simulate"
 	@echo "... test_graphique"
 	@echo "... test_interraction"
+	@echo "... test_simul"
 	@echo "... test_simulate"
 	@echo "... test_univers"
 	@echo "... test_visu"

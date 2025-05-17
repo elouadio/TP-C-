@@ -48,7 +48,7 @@ void sauvegarderPositions(const std::vector<Particule>& particules, const std::s
  * 🔹 Initialisation des particules dans l'univers
  */
 void initialiserParticules(Univers& univers) {
-    double espace = pow(2, 1.0 / 10000.0); // 🔹 2^(1/6)
+    double espace = pow(2, 1.0 / 6.0); // 🔹 2^(1/6)
     int id = 0;
 
     // === Initialisation du carré (40x40 particules) ===
@@ -58,7 +58,7 @@ void initialiserParticules(Univers& univers) {
             double x = i * espace +80;
             double y = j * espace + 35 ;
             Vecteur pos(x, y , 0.0); // Position en haut
-            Vecteur vitesse(0.0, 10.0, 0.0);                   // Vitesse vers le bas
+            Vecteur vitesse(0.0, -15.0, 0.0);                   // Vitesse vers le bas
             Vecteur force(0.0, 0.0, 0.0);
 
             univers.getParticules().emplace_back(id++, "carre", 1.0, pos, vitesse, force);
@@ -101,7 +101,7 @@ void afficherPositions(const std::vector<Particule>& particules) {
  */
 int main() {
     // === Paramètres de l'univers ===
-    vector<double> longueurs = {250.0, 40.0};  // Univers 2D : longueur X, Y
+    vector<double> longueurs = {250.0, 50.0};  // Univers 2D : longueur X, Y
     double epsilon = 5.0;
     double sigma = 1.0;
     double rcut = 2.5 * sigma;
@@ -121,8 +121,8 @@ int main() {
     cout << " Les particules sont correctement initialisées." << endl;
 
     // === Simulation de test ===
-    double tmax = 19.5;
-    simulate(univers, tmax);
+    double tmax = 2.5;
+    simulate(univers, tmax, 0.001);
 
     //  Sauvegarde des positions finales
     sauvegarderPositions(univers.getParticules(), "positions_finales.csv", 250.0, 100.0);
